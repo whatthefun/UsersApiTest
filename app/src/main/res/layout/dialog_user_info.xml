@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:apps="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/userProfileImageView"
+        android:layout_width="@dimen/profile_image_size"
+        android:layout_height="@dimen/profile_image_size"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/userAccount"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/userName"
+        apps:src="@drawable/baseline_portrait_24" />
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:lines="1"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="normal|bold"
+        app:autoSizeMinTextSize="15sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/userProfileImageView"
+        app:layout_constraintTop_toTopOf="parent"
+        apps:text="User Name" />
+
+    <TextView
+        android:id="@+id/userAccount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/userProfileImageView"
+        app:layout_constraintTop_toBottomOf="@+id/userName"
+        apps:text="Account" />
+
+    <TextView
+        android:id="@+id/followersLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/followers_label"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userProfileImageView" />
+
+    <TextView
+        android:id="@+id/followersTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/followersLabel"
+        app:layout_constraintTop_toTopOf="@+id/followersLabel"
+        apps:text="66" />
+
+    <TextView
+        android:id="@+id/followingLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:text="@string/following_label"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/followersTxt"
+        app:layout_constraintTop_toTopOf="@+id/followersLabel" />
+
+    <TextView
+        android:id="@+id/followingTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/followingLabel"
+        app:layout_constraintTop_toTopOf="@+id/followersLabel"
+        apps:text="66" />
+
+    <TextView
+        android:id="@+id/githubLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="@string/github_label"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/followersLabel" />
+
+    <TextView
+        android:id="@+id/githubTxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="10dp"
+        android:autoLink="web"
+        android:lines="1"
+        android:textSize="18sp"
+        app:autoSizeMinTextSize="15sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.004"
+        app:layout_constraintStart_toEndOf="@+id/githubLabel"
+        app:layout_constraintTop_toTopOf="@+id/githubLabel"
+        apps:text="github link" />
+
+    <TextView
+        android:id="@+id/lastUpdateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="@string/last_update_label"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/githubLabel" />
+
+    <TextView
+        android:id="@+id/lastUpdateTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/lastUpdateLabel"
+        app:layout_constraintTop_toTopOf="@+id/lastUpdateLabel"
+        apps:text="update time" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

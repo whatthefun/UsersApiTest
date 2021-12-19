@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">UsersApiTest</string>
+    <string name="followers_label">Followers:</string>
+    <string name="following_label">Following:</string>
+    <string name="github_label">Github:</string>
+    <string name="last_update_label">Last Update:</string>
+    <string name="ok">OK</string>
 </resources>
